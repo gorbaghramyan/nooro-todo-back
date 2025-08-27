@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 
-export const allowedColors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange', 'pink', 'brown'] as const;
+export const allowedColors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange', 'pink', 'brown', 'teal'] as const;
 
 export function validateTask(req: Request, res: Response, next: NextFunction) {
   const { title, color } = req.body;
